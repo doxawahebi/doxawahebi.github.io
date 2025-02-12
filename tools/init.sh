@@ -109,23 +109,4 @@ main() {
   commit
 }
 
-while (($#)); do
-  opt="$1"
-  case $opt in
-  --no-gh)
-    _no_gh=true
-    shift
-    ;;
-  -h | --help)
-    help
-    exit 0
-    ;;
-  *)
-    # unknown option
-    help
-    exit 1
-    ;;
-  esac
-done
-
 main
