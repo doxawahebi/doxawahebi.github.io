@@ -29,7 +29,7 @@ github:
   username: doxawahebi # change to your GitHub username
 
 twitter:
-  username: None # change to your Twitter username
+  username:  # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -59,7 +59,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-0X1J8TN6FZ
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
