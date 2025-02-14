@@ -64,7 +64,7 @@ UI design을 수정하거나 Jekyll에 익숙하고
 ---
 github repository를 생성한다. 이때 repository name은 (github user name).github.io로 한다.
 
-![Desktop View](/assets/img/20250212/repo_name.png){: width="700" height="300" }
+![Desktop View](/assets/img/posts/20250212/repo_name.png){: width="700" height="300" }
 필자는 이미 레포지토리가 존재해서 빨간색으로 뜨는 것일 뿐이다.
 
 로컬 저장소와 원격 저장소를 연결한다.
@@ -99,6 +99,7 @@ run: npm install && npm run build
 
 </div>
 </details>
+<br/>
 
 init.sh가 성공적으로 실행되었다면
 Jekyll가 로컬 서버에서 실행되는 지 확인해봅니다.
@@ -127,6 +128,7 @@ bundle exec jekyll serve
 
 
 ## 포스팅 규칙
+---
 포스팅 작성에 관한 내용은 [해당 글](https://chirpy.cotes.page/posts/write-a-new-post/)에 잘 나와있습니다.
 
 ### 1. 파일명과 경로
@@ -139,7 +141,7 @@ The `_posts` 폴더는 블로그의 포스트들이 위치하는 곳입니다. �
 
 ### 2. Frontmatter
 모든 블로그 포스트들은 layout이나 다른 meta date를 설정하기 위해서는 파일 맨 위에 [front matter](https://jekyllrb.com/docs/front-matter/)를 작성해야합니다.
-아래 같은 형식으로 작성해주면 됩니다.
+아래 같은 형식으로 작성해주면 되는데 이에 대해서는 다음 시간에 좀 더 알아봅사더,
 ```yaml
 ---
 title: TITLE
@@ -153,6 +155,7 @@ tags: [TAG]     # TAG 이름은 항상 소문자이여야합니다.
 
 
 ## 원격 저장소에 소스 올리고 배포하기
+---
 ```shell
 git add . &&
 git commit -m "message about update" &&
@@ -161,30 +164,8 @@ git push
 
 깃허브에 들어가서 배포가 성공적으로 되었다면 깃허브 블로그(https://(username).github.io/)에 들어가서 확인해봅니다.
 
-
-
-## 댓글 추가하기
-
-[utterances](https://utteranc.es/?installation_id=60940545&setup_action=install) 이용한 방법
-<details>
-<summary>utterances</summary>
-<div markdown="1">
-
-해당 코드를 Layout에 가장 밑에 추가한다.
-```HTML
-<script src="https://utteranc.es/client.js"
-        repo="doxawahebi/doxawahebi.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-```
-
-</div>
-</details>
-
-<br/>
+## 마무리
+---
 간단하게 블로그를 만드는 방법을 살펴보았습니다.
 참고로 살펴본 내용들은 대부분 다른 jekyll theme에 적용되는 내용들입니다.
 더 많은 내용이 궁금하면 [jekyll 공식 docs](https://jekyllrb.com/docs/themes/)를 읽어보는 것도 좋을 것 같습니다.
