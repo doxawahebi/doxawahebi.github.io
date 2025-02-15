@@ -64,7 +64,7 @@ UI design을 수정하거나 Jekyll에 익숙하고
 ---
 github repository를 생성한다. 이때 repository name은 (github user name).github.io로 한다.
 
-![Desktop View](/assets/img/posts/20250212/repo_name.png){: width="700" height="300" }
+![Desktop View](/assets/img/posts/2025/02/repo_name.png){: width="700" height="300" }
 필자는 이미 레포지토리가 존재해서 빨간색으로 뜨는 것일 뿐이다.
 
 로컬 저장소와 원격 저장소를 연결한다.
@@ -170,7 +170,8 @@ git push
 참고로 살펴본 내용들은 대부분 다른 jekyll theme에 적용되는 내용들입니다.
 더 많은 내용이 궁금하면 [jekyll 공식 docs](https://jekyllrb.com/docs/themes/)를 읽어보는 것도 좋을 것 같습니다.
 
-# Reference
+## Reference
+---
 - https://chirpy.cotes.page/posts/getting-started/
 - https://chirpy.cotes.page/posts/write-a-new-post/
 - https://www.irgroup.org/posts/jekyll-chirpy/

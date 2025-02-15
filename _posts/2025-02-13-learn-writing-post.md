@@ -56,6 +56,15 @@ authors: [<author1_id>, <author2_id>]   # 저자가 복수인 경우
 ### description
 
 
+
+## Markdown preview
+---
+vscode에서 마크다운을 작성을 하시는 분은 `Ctrl + K`를 누른 후 `V`키를 누르거나 밀에 사진에 있는 빨간상자 부분을 누르면
+![Desktop View](/assets/img/posts/2025/02/preview-button.png){: width="700" height="300" }
+
+다음과 같이 preview가 사이드에 나오니까. 참고해두면 좋을 것 같습니다.
+![Desktop View](/assets/img/posts/2025/02/preview-markdown.png){: width="700" height="300" }
+
 ## Reference
 ---
 - https://chirpy.cotes.page/posts/write-a-new-post/
