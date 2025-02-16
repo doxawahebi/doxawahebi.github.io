@@ -82,7 +82,7 @@ Fixes #<issue number>
 
 
 
-다음과 같은 형식으로 [커밋]((https://github.com/angular/angular/commit/6c92d653493404a5f13aa59cde390bcbed973fb6))을 작성하면 된다.
+다음과 같은 형식으로 [커밋](https://github.com/angular/angular/commit/6c92d653493404a5f13aa59cde390bcbed973fb6)을 작성하면 된다.
 
 ```
 fix(core): add hasValue narrowing to ResourceRef (#59708)
