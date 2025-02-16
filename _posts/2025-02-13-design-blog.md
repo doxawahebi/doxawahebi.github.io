@@ -2,7 +2,7 @@
 title: Blog 커스터마이징 하기
 description: 
 author: doxawahebi
-date: 2025-02-12 21:26:00 +0900
+date: 2025-02-13 20:26:00 +0900
 categories: [Jekyll]
 tags: [github-pages, jekyll, chirpy-theme]     # TAG names should always be lowercase
 pin: false
@@ -125,6 +125,8 @@ About -> 정보
 사이드 바에 있는 블로그 이름과 설명이 타이틀과 서브타이틀입니다.
 `_sass/layout/_sidebar.scss`에서 수정할 수 있습니다.
 
+참고로 css 변수들은 `_sass/themes`폴더에 theme에서 정의되어있습니다. 자신이 선택한 테마에 맞춰 색깔을 변경해주시면 될 것 같습니다.
+
 ```scss
   .site-title {
     @extend %clickable-transition;
@@ -170,11 +172,11 @@ CATEGORIES, TAGS, ARCHIVES도 전부 여기서 수정해주면 됩니다.
 ---
 favicon은 인터넷 웹 브라우저의 주소창에 표시되는 웹사이트나 웹페이지를 대표하는 아이콘입니다.
 다음과 같은 작은 이미지가 favicon입니다.
-![Desktop View](/assets/img/posts/2025/02/explain-favicon.png){: width="700" height="300" }
+![explain-favicon](/assets/img/posts/2025/02/explain-favicon.png){: width="700" height="300" }
 
-이 [favicon 만들어주는 사이트](https://www.favicon-generator.org/) 들어가서 이미지 업로드 하면 이미지들을 주는데
-`asset/img/favicons` 들어가서 이미지들 대체 해주면 됩니다..
+이 [favicon 만들어주는 사이트](https://www.favicon-generator.org/) 들어가서 이미지 업로드 하면 이미지들을 주는데 `asset/img/favicons` 들어가서 이미지들 대체 해주면 됩니다..
 
+<!-- favicon이미지들은 `_site/404.html` 같은 데서 참조하고 있습니다. 이름 바꾸거나 이미지 추가할거면 그 파일들 따로 수정해주세요. -->
 
 ## 구글 애널리틱스 설정
 ---

@@ -42,6 +42,8 @@ image:
   twitter: <twitter_of_author>
   url: <homepage_of_author>
 ```
+{: file="_data/authors.yml" }
+
 그 후 작성할 포스트의 frontmatter에 다음과 같이 작가정보를 추가헤준다.
 ```yaml
 ---
@@ -51,11 +53,41 @@ authors: [<author1_id>, <author2_id>]   # 저자가 복수인 경우
 ---
 ```
 참고로 공식 문서에 따르면 `_data/authors.yml`의 작가 정보를 읽는 것의 이점은 페이지가 `twitter:creator` 메타 태그를 가지게 되서
-[Twitter Cards](https://developer.x.com/en/docs/x-for-websites/cards/guides/getting-started#card-and-content-attribution)를 풍부하게 하고 SEO에 좋다고 하네요.
+[Twitter Cards](https://developer.x.com/en/docs/x-for-websites/cards/guides/getting-started#card-and-content-attribution)를 풍부하게 하고 SEO에 좋다고 한다.
 
-### description
+### Description
+```yaml
+---
+description: 포스트에 대한 짧은 요약
+---
+```
+다음 사진의 회색 글자가 description이다. 글이 어떤 내용인지 간단하게 보이고 싶으면 작성하면 된다.
+![Desktop View](/assets/img/posts/2025/02/post-description.png){: width="700" }
+
+### Table of Contents
+목차는 오른쪽 패널에 기본적으로 항상 보이며
+전역적으로 보이지 않게 하고 싶으면  `_config.yml`을 `toc` `false`로 수정하면 되고
+특정 게시물만 안 보이게 할 거면 Front Matter에 다음과 같이 작성하면 된다.
+```yaml
+---
+toc: false
+---
+```
+
+### Comments
+특정 포스트에 대해 comments가 안 보이게 할려면 다음과 같이 작성한다.
+```yaml
+---
+comments: false
+---
+```
+Comments 활성화에 관한 내용을 보고 싶으면 다음 [글](https://doxawahebi.github.io/posts/design-blog/#%EB%8C%93%EA%B8%80-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)에서 참고하면 된다.
 
 
+### Prompts
+```markdown
+{: .prompt-info }
+```
 
 ## Markdown preview
 ---
@@ -64,6 +96,24 @@ vscode에서 마크다운을 작성을 하시는 분은 `Ctrl + K`를 누른 후
 
 다음과 같이 preview가 사이드에 나오니까. 참고해두면 좋을 것 같습니다.
 ![Desktop View](/assets/img/posts/2025/02/preview-markdown.png){: width="700" height="300" }
+
+## commit error
+요구하는 커밋 규칙을 지키지 않으면 다음과 같은 오류 발생한다.
+**"subject may not be empty [subject-empty]" and "type may not be empty [type-empty]"**
+
+이렇게 작성하거나
+```shell
+git commit -m "fix(core): add hasValue narrowing to ResourceRef (#59708)"
+```
+
+귀찮고 잘 모르겠으면 이렇게 작성하면 된다. (`--no-verify`한다는 이야기이다.)
+```shell
+git commit -n -m ""
+```
+
+잘 모르겠으면 필자가 작성한 [글](https://doxawahebi.github.io/posts/commit-message-style/)을 참고하자.
+
+
 
 ## Reference
 ---
