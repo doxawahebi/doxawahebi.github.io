@@ -2,7 +2,7 @@
 title: ubuntu에서 이더넷 설정하기
 description: 
 author: doxawahebi
-date: 2025-02-13 20:26:00 +0900
+date: 2025-02-24 23:26:00 +0900
 categories: [linux, ubuntu]
 tags: [linux, ubuntu, ethernet, c-to-ethernet]     # TAG names should always be lowercase
 pin: false
@@ -38,6 +38,11 @@ make
 sudo make install
 ```
 
+나중에 드라이버를 삭제할려면 make를 했던 디렉토리로 돌아와 다음 명령을 입력해줍니다.
+```shell
+make uninstall
+```
+
 드라이버 로드를 한다.
 ```shell
 sudo modprobe ax_usb_nic
@@ -57,8 +62,13 @@ modinfo ax_usb_nic
 ```shell
 ip link
 ```
-`NO-CARRIER`로 표시되어있다면 다음 명령어를 쳐줍니다.
+어댑터는 제대로 잡히는데도 `NO-CARRIER`로 표시되어있다면 다음 명령어를 통해
+Ethernet interface가 제대로 설정되어 있는 지 확인해봅니다.
+```shell
+ethtool <interface name>
+```
 
+`Speed`나 `Duplex`가 Unknown이라고 표시되어있다면 다음 명령어를 통해 설정해줍니다.
 ```shell
 ethtool -s eth0 speed 100 duplex full
 ```
