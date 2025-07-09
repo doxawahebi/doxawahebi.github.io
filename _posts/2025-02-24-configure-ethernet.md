@@ -64,6 +64,7 @@ ip link
 ```
 어댑터는 제대로 잡히는데도 `NO-CARRIER`로 표시되어있다면 다음 명령어를 통해
 Ethernet interface가 제대로 설정되어 있는 지 확인해봅니다.
+<!-- 다음 명령어를 실행하면 된다. 이더넷이 잡힌다.-->
 ```shell
 ethtool <interface name>
 ```
