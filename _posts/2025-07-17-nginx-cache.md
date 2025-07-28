@@ -2,7 +2,7 @@
 title: nginx server cache
 description: 
 author: doxawahebi
-date: 2025-02-25 15:39:00 +0900
+date: 2025-07-17 15:39:00 +0900
 categories: [web]
 tags: [web, nginx, reverse-proxy, cache]     # TAG names should always be lowercase
 pin: false
@@ -153,16 +153,6 @@ location ~* \.(css|png)$ {
 request를 `http://server:80`으로 넘긴다.
 
 `proxy_cache_valid 200 302 1d` : 응답 코드가 `200` 또는 `302`이면 해당 응답을 1일 동안 캐시한다.
-## Character
----
-
-### Time complexity
----
-
-
-## Application
----
-
 
 
 ## Reference
