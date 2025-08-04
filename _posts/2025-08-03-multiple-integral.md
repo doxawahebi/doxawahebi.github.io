@@ -1,5 +1,5 @@
 ---
-title: [Calculus] multiple-integral
+title: multiple-integral
 description: 
 author: doxawahebi
 date: 2025-07-17 15:39:00 +0900

@@ -1,5 +1,5 @@
 ---
-title: [Calculus] vector function
+title: partial derivative
 description: 
 author: doxawahebi
 date: 2025-07-17 15:39:00 +0900
