@@ -5,7 +5,7 @@ author: doxawahebi
 date: 2025-02-12 21:26:00 +0900
 categories: [Jekyll]
 tags: [github-pages, jekyll, chirpy-theme]     # TAG names should always be lowercase
-pin: false
+pin: true
 math: false
 mermaid: false
 ---
@@ -113,7 +113,13 @@ git commit -n -m ""
 
 잘 모르겠으면 필자가 작성한 [글](https://doxawahebi.github.io/posts/commit-message-style/)을 참고하자.
 
-
+### Math
+mathJax를 사용하고싶다면 math를 true로 변경하면 된다.
+```yaml
+---
+math: true
+---
+```
 
 ## Reference
 ---
