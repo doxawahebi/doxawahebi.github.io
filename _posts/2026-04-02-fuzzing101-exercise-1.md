@@ -2,7 +2,7 @@
 title: fuzzing101 exercise 1
 description: fuzzing101 exercise 1
 author: doxawahebi
-date: 2026-04-03 23:40:00 +0900
+date: 2026-04-02 23:40:00 +0900
 categories: [pwnable]
 tags: [fuzzing, fuzzing101, pwnable, xpdf, aflpluslpus]     # TAG names should always be lowercase
 pin: false
