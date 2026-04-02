@@ -3,7 +3,7 @@ title: Lucas Theorem
 description: 뤼카의 정리
 author: doxawahebi
 date: 2026-02-16 23:35:00 +0900
-categories: [web]
+categories: [math]
 tags: [lucas_theorem, number_theory]     # TAG names should always be lowercase
 pin: false
 math: true
