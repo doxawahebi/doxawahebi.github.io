@@ -30,7 +30,8 @@ https://www.cvedetails.com/cve/CVE-2019-13288/
 ---
 PDF는 Object들이 얽히고설킨 거대한 데이터베이스입니다. 크게 4가지 구역(Header, Body, XRef Table, Trailer)으로 나뉩니다.
 
-![[58e8caed9ccc003d3c9af6868857837e69cbb515-409x644.webp]]
+<!-- ![[58e8caed9ccc003d3c9af6868857837e69cbb515-409x644.webp]] -->
+
 (https://apryse.com/blog/pdf-structure-creation)
 
 Body에서 실제 데이터는 다음과 같이 정의됩니다.
