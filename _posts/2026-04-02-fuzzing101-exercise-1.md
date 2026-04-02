@@ -346,7 +346,7 @@ stream
 `Parser.cc:94`
 ```cpp
 if ((str = makeStream(obj, fileKey, encAlgorithm, keyLength,
-          objNum, objGen)))
+          objNum, objGen)))
 ```
 파서가 7번 객체를 읽다가 `<</Length ...>>` 뒤에 스트림 데이터가 있는 것을 발견합니다. 스트림 객체를 메모리에 생성하기 위해 `makeStream` 함수를 호출합니다.
 
@@ -381,8 +381,8 @@ return (e = find(key)) ? e->val.fetch(xref, obj) : obj->initNull();
 `Object::fetch(XRef*, Object*)`
 ```cpp
 Object *Object::fetch(XRef *xref, Object *obj) {
-  return (type == objRef && xref) ?
-         xref->fetch(ref.num, ref.gen, obj) : copy(obj);
+  return (type == objRef && xref) ?
+          xref->fetch(ref.num, ref.gen, obj) : copy(obj);
 }
 ```
 여기서 치명적인 분기가 발생합니다. 현재 `Length`의 값인 `7 0 R`은 타입이 `objRef`(객체 참조)입니다. 따라서 `type == objRef` 조건이 참(True)이 됩니다. 자신이 직접 값을 줄 수 없으니, 상호 참조 테이블을 관리하는 `XRef` 객체에게 7번 객체(`ref.num`)를 넘깁니다.
@@ -392,9 +392,9 @@ Object *Object::fetch(XRef *xref, Object *obj) {
 `XRef::fetch(int num, int gen, Object *obj)`
 ```cpp
 parser = new Parser(this,
-         new Lexer(this,
-     str->makeSubStream(start + e->offset, gFalse, 0, &obj1)),
-         gTrue);
+        new Lexer(this,
+        str->makeSubStream(start + e->offset, gFalse, 0, &obj1)),
+        gTrue);
 ```
 `XRef`는 7번 객체를 파일에서 읽어오기 위해 **새로운 `Parser` 객체를 동적 할당(`new Parser`)하여 생성**합니다. 
 
